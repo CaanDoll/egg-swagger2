@@ -19,7 +19,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-swagger2.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-swagger2
 
-generate swagger doc by swagger 2.0
+Not in the way of annotation to generate swagger doc by swagger 2.0.Fully support the swagger syntax configuration.Recommended for use in router.js
 
 ## Install
 
