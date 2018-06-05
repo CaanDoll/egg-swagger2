@@ -110,17 +110,16 @@ see [config/config.default.js](config/config.default.js) for more detail.
          description: 'admin\'s username & password',
          required: true,
          schema: {
-             type: 'object',
-               username: {
-                 type: 'string',
-                 description: 'admin\'s username',
-               },
-               password: {
-                 type: 'string',
-                 description: 'admin\'s password',
-               },
-             },
+           type: 'object',
+           username: {
+             type: 'string',
+             description: 'admin\'s username',
            },
+           password: {
+             type: 'string',
+             description: 'admin\'s password',
+           },
+         },
        },
      ],
      responses: {
