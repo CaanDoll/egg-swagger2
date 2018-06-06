@@ -98,39 +98,58 @@ see [config/config.default.js](config/config.default.js) for more detail.
    const { router, controller, swagger } = app;
    router.post('/login', controller.test.postLogin);
    swagger.post('/login', {
-     tags: [
-       'admin',
-     ],
-     summary: 'Login a admin',
-     description: '',
-     parameters: [
-       {
-         in: 'body',
-         name: 'body',
-         description: 'admin\'s username & password',
-         required: true,
-         schema: {
-           type: 'object',
-           username: {
-             type: 'string',
-             description: 'admin\'s username',
+       tags: [
+         'admin',
+       ],
+       summary: 'Login a admin',
+       description: '',
+       parameters: [
+         {
+           in: 'body',
+           name: 'body',
+           description: 'admin\'s username & password',
+           required: true,
+           schema: {
+             type: 'object',
+             required: [ 'username', 'password' ],
+             properties: {
+               username: {
+                 type: 'string',
+                 description: 'admin\'s username',
+               },
+               password: {
+                 type: 'string',
+                 description: 'admin\'s password',
+               },
+             },
            },
-           password: {
-             type: 'string',
-             description: 'admin\'s password',
+         },
+       ],
+       responses: {
+         200: {
+           description: 'SUCCEED',
+           schema: {
+             type: 'object',
+             properties: {
+               status: {
+                 type: 'string',
+                 description: 'status',
+               },
+               data: {
+                 type: 'object',
+                 description: 'data',
+                 properties: {
+                   token: {
+                     type: 'string',
+                     description: 'token',
+                   },
+                 },
+               },
+             },
            },
          },
        },
-     ],
-     responses: {
-       200: {
-         status: 'SUCCEED',
-         data:{
-            token:xxx
-         }
-       },
-     },
-   });
+     });
    router.get('/roles', controller.test.getRoles);
    swagger.get('/roles', {
      tags: [
@@ -157,16 +176,45 @@ see [config/config.default.js](config/config.default.js) for more detail.
      ],
      responses: {
        200: {
-         status: 'SUCCEED',
-         datas:[],
-         pageIndex:1,
-         pageSize:10,
-         totalCount:0
-       },
+          description: 'SUCCEED',
+          schema: {
+            type: 'object',
+            properties: {
+              status: {
+                type: 'string',
+                description: 'status',
+              },
+              datas: {
+                type: 'array',
+                description: 'result datas',
+                properties: {
+                  token: {
+                    type: 'string',
+                    description: 'token',
+                  },
+                },
+              },
+              pageIndex:{
+                type: 'number',
+                description: 'pageIndex',
+              },
+              pageSize:{
+                type: 'number',
+                description: 'pageSize',
+              },
+              totalCount:{
+                type: 'number',
+                description: 'totalCount',
+              },
+            },
+          },
+        },
      },
    });
  };
 ```
+- Schema configuration can be linked to definitions in config through $ref
+- [For more configuration, look at the Swagger Editor example](https://editor.swagger.io/)
 
 ## Questions & Suggestions
 
@@ -175,7 +223,7 @@ Please open an issue [here](https://github.com/eggjs/egg/issues).
 ## Other
 
 * [中文文档](README.zh_CN.md)
-* [Swagger Editor](https://editor.swagger.io/)
+* [Swagger website](https://www.swagger.io/)
 
 ## License
 
