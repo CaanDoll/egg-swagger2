@@ -8,18 +8,18 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-swagger2.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-swagger2
-[travis-image]: https://img.shields.io/travis/eggjs/egg-swagger2.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-swagger2
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-swagger2.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-swagger2?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-swagger2.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-swagger2
+[travis-image]: https://img.shields.io/travis/CaanDoll/egg-swagger2.svg?style=flat-square
+[travis-url]: https://travis-ci.org/CaanDoll/egg-swagger2
+[codecov-image]: https://img.shields.io/codecov/c/github/CaanDoll/egg-swagger2.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/CaanDoll/egg-swagger2?branch=master
+[david-image]: https://img.shields.io/david/CaanDoll/egg-swagger2.svg?style=flat-square
+[david-url]: https://david-dm.org/CaanDoll/egg-swagger2
 [snyk-image]: https://snyk.io/test/npm/egg-swagger2/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-swagger2
 [download-image]: https://img.shields.io/npm/dm/egg-swagger2.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-swagger2
 
-Not in the way of annotation to generate swagger doc by swagger 2.0.Fully support the swagger syntax configuration.Recommended for use in router.js
+Not in the way of annotation to generate swagger doc by swagger 2.0.Fully support the swagger syntax configuration.Recommended for use in app/router.js
 
 ## Install
 
@@ -171,6 +171,11 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/eggjs/egg/issues).
+
+## Other
+
+* [中文文档](README.zh_CN.md)
+* [Swagger Editor](https://editor.swagger.io/)
 
 ## License
 
