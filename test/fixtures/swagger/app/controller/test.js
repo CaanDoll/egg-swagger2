@@ -1,7 +1,7 @@
 'use strict';
 const Controller = require('egg').Controller;
 
-class Controller extends Controller {
+class TestController extends Controller {
 
   async postLogin() {
     const { ctx } = this;
@@ -18,4 +18,4 @@ class Controller extends Controller {
   }
 }
 
-module.exports = Controller;
+module.exports = TestController;
