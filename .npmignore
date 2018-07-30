@@ -1,0 +1,9 @@
+/test
+/.github
+.eslintignore
+.eslintrc
+.gitignore
+.travis.yml
+appveyor.yml
+.npmignore
+.autod.conf.js

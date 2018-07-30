@@ -55,6 +55,7 @@ exports.swagger2 = {
 ```js
 // {app_root}/config/config.default.js
 exports.swagger2 = {
+  enable:false, // 禁用swagger , 默认为true
   base: {
     /* default config,support cover
     schemes: [
