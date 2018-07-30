@@ -42,6 +42,7 @@ exports.swagger2 = {
 ```js
 // {app_root}/config/config.default.js
 exports.swagger2 = {
+  enable:false, // disable swagger , default true
   base: {
     /* default config,support cover
     schemes: [
