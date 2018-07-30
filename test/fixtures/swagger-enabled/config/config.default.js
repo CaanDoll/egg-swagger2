@@ -1,6 +1,9 @@
 'use strict';
 module.exports = () => {
   return {
+    logger: {
+      level: 'NONE',
+    },
     swagger2: {
       base: {
         info: {
