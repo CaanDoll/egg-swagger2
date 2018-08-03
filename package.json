@@ -1,6 +1,6 @@
 {
   "name": "egg-swagger2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "generate swagger doc by swagger 2.0",
   "eggPlugin": {
     "name": "swagger2"
@@ -50,12 +50,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-swagger2.git"
+    "url": "git+https://github.com/CaanDoll/egg-swagger2.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/CaanDoll/egg-swagger2/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-swagger2#readme",
+  "homepage": "https://github.com/CaanDoll/egg-swagger2",
   "author": "caandoll",
   "license": "MIT"
 }
